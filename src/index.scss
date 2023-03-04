@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Gloock");
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Six Caps");
+$bravomMain: rgb(250, 207, 178); //Lower by 2 for old
+$bravomSecond: rgb(112, 88, 72);
+$bravomThird: rgb(112, 88, 72);
+
+$bravomLightenSmall: 10;
+$bravomLightenMedium: 10;
+$bravomLightenLarge: 10;
+
+$bravomDarkenSmall: 10;
+$bravomDarkenMedium: 20;
+$bravomDarkenLarge: 10;
+
+.post-preview:hover {
+    cursor: pointer;
+}
+
+.bravom {
+    background-color: $bravomMain;
+    font-family: 'Oswald';
+    background-color: $bravomMain;
+    padding: 0 5rem;
+}
+.bravom {
+
+    .header {
+        
+    }
+
+    .title {
+        font-size: 3rem;
+        /* padding: 1rem; */
+        
+    }
+
+    .navbar {
+        width: 1fr;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        background-color: $bravomSecond;
+        color: $bravomMain;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    .navbar .main {
+        text-align: left;
+    }
+    
+    .navbar .secondary {
+        text-align: right;
+    }
+
+    .navbar .item {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall)
+    }
+
+    .navbar .item:hover {
+        background-color: lighten($color: $bravomSecond, $amount: $bravomLightenSmall * 2);
+    }
+
+    .navbar .item .active {
+        background-color: lighten($color: $bravomSecond, $amount: $bravomLightenSmall * 2);
+    }
+
+    .content-body {
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 7fr 2fr;
+    }
+
+    .post {
+        font-size: 1.5em;
+        line-gap-override: 0.1rem;
+    }
+
+    .post .title {
+        font-size: 3rem;
+    }
+    
+    .post .info {
+        font-size: 1.1rem;
+    }
+
+
+    .post .first-para::first-letter  {
+        font-size: 3.8em;
+        display: inline;
+        letter-spacing: 0.5rem;
+    }
+
+    .sidebar {
+        background-color: $bravomSecond;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        padding: 1rem;
+        //margin-top: -0.5rem;
+    }
+
+    .sidebar .title {
+        font-size: 1.9rem;
+    }
+
+    .posts-preview {
+        
+    }
+
+    .post-preview {
+        //background-color: lighten($color: $bravomSecond, $amount: $bravomLightenSmall);
+        border-bottom: 0.15rem;
+        border-bottom-color: lighten($color: $bravomSecond, $amount: $bravomLightenSmall);  
+        border-bottom-style: solid;      
+        padding: 1rem;
+    }
+
+    .post-preview img {
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .post-preview .title {
+        font-size: 1.5rem
+    }
+    
+    .post-preview .content {
+        font-size: 0.95em;
+    }
+
+    .post-preview .info {
+        display: flex;
+    }
+
+    .post-preview .date {
+        font-weight: 50;
+        font-size: 0.9em;
+        padding-right: 15px;
+    }
+
+    .post-preview .author {
+        font-weight: 50;
+        font-size: 0.9em;
+    }
+
+    form {
+        background-color: $bravomSecond;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        padding: 1rem;
+    }
+
+    input {
+        background-color: lighten($color: $bravomSecond, $amount: $bravomLightenMedium);
+        border: 0;
+        padding: 1rem;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        font-size: 1.2rem;
+    }
+
+    input::placeholder {
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        font-family: "Oswald";
+    }
+
+    button {
+        border: 0;
+        background-color: lighten($color: $bravomSecond, $amount: $bravomLightenMedium);;
+        font-family: "Oswald";
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        
+    }
+
+    .blog-posts {
+        display: grid;
+        grid-template-columns: 6fr 6fr 6fr;
+        
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        background-color: $bravomSecond;
+        color: lighten($color: $bravomMain, $amount: $bravomLightenSmall);
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .comments .info {
+        font-size: 0.8em;
+    }
+
+}

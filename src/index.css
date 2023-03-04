@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Gloock");
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Six Caps");
+.post-preview:hover {
+  cursor: pointer;
+}
+
+.bravom {
+  background-color: rgb(250, 207, 178);
+  font-family: "Oswald";
+  background-color: rgb(250, 207, 178);
+  padding: 0 5rem;
+}
+
+.bravom .title {
+  font-size: 3rem;
+  /* padding: 1rem; */
+}
+.bravom .navbar {
+  width: 1fr;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(112, 88, 72);
+  color: rgb(250, 207, 178);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.bravom .navbar .main {
+  text-align: left;
+}
+.bravom .navbar .secondary {
+  text-align: right;
+}
+.bravom .navbar .item {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fdede2;
+}
+.bravom .navbar .item:hover {
+  background-color: #a78a77;
+}
+.bravom .navbar .item .active {
+  background-color: #a78a77;
+}
+.bravom .content-body {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+}
+.bravom .post {
+  font-size: 1.5em;
+  line-gap-override: 0.1rem;
+}
+.bravom .post .title {
+  font-size: 3rem;
+}
+.bravom .post .info {
+  font-size: 1.1rem;
+}
+.bravom .post .first-para::first-letter {
+  font-size: 3.8em;
+  display: inline;
+  letter-spacing: 0.5rem;
+}
+.bravom .sidebar {
+  background-color: rgb(112, 88, 72);
+  color: #fdede2;
+  padding: 1rem;
+}
+.bravom .sidebar .title {
+  font-size: 1.9rem;
+}
+.bravom .post-preview {
+  border-bottom: 0.15rem;
+  border-bottom-color: #8f705c;
+  border-bottom-style: solid;
+  padding: 1rem;
+}
+.bravom .post-preview img {
+  max-width: 100%;
+}
+.bravom img {
+  width: 100%;
+}
+.bravom .post-preview .title {
+  font-size: 1.5rem;
+}
+.bravom .post-preview .content {
+  font-size: 0.95em;
+}
+.bravom .post-preview .info {
+  display: flex;
+}
+.bravom .post-preview .date {
+  font-weight: 50;
+  font-size: 0.9em;
+  padding-right: 15px;
+}
+.bravom .post-preview .author {
+  font-weight: 50;
+  font-size: 0.9em;
+}
+.bravom form {
+  background-color: rgb(112, 88, 72);
+  color: #fdede2;
+  padding: 1rem;
+}
+.bravom input {
+  background-color: #8f705c;
+  border: 0;
+  padding: 1rem;
+  color: #fdede2;
+  font-size: 1.2rem;
+}
+.bravom input::-moz-placeholder {
+  color: #fdede2;
+  font-family: "Oswald";
+}
+.bravom input::placeholder {
+  color: #fdede2;
+  font-family: "Oswald";
+}
+.bravom button {
+  border: 0;
+  background-color: #8f705c;
+  font-family: "Oswald";
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #fdede2;
+}
+.bravom .blog-posts {
+  display: grid;
+  grid-template-columns: 6fr 6fr 6fr;
+}
+.bravom .comments {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+  background-color: rgb(112, 88, 72);
+  color: #fdede2;
+  padding: 1rem;
+  margin: 1rem;
+}
+.bravom .comments .info {
+  font-size: 0.8em;
+}
+
+.jungle {
+  background-image: linear-gradient(rgb(23, 49, 35), #070e0a);
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: 525;
+  color: rgb(222, 250, 220);
+  overflow-x: hidden;
+}
+
+.jungle .header {
+  background-image: linear-gradient(#0b1811 rgb(14, 31, 22));
+  width: 100%;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+  padding-right: -4rem;
+}
+.jungle .title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+}
+.jungle .navbar {
+  display: flex;
+  background-color: rgb(211, 248, 208);
+  padding: 1.6rem;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+}
+.jungle .navbar .item {
+  color: rgb(23, 49, 35);
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: rgb(211, 248, 208);
+}
+.jungle .navbar .item:hover {
+  background-color: #cbf7c7;
+}
+.jungle .content-body {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  padding: 1rem 0 0 4rem;
+}
+.jungle .post {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  margin-left: 1.5rem;
+}
+.jungle .post .title {
+  font-size: 2.9rem;
+  margin: 0;
+}
+.jungle .sidebar {
+  padding: 2rem;
+  background-color: rgb(211, 248, 208);
+  color: rgb(23, 49, 35);
+  border-radius: 1.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 0.3rem;
+}
+.jungle .sidebar .title {
+  margin: 0;
+}
+.jungle .post-preview img {
+  width: 100%;
+  border-radius: 1.5rem;
+  border: 0.5rem solid rgb(23, 49, 35);
+}
+.jungle .post-preview .title {
+  font-size: 1.25rem;
+}
+.jungle .post-preview .content {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.jungle .post-preview .info {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.blue-morning {
+  background-color: rgb(132, 173, 219);
+  font-family: "Oswald";
+  padding: 0 3rem;
+  font-weight: 550;
+}
+
+.blue-morning .title {
+  font-size: 3.5rem;
+}
+.blue-morning .navbar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 0.3rem;
+}
+.blue-morning .navbar .item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.3rem 1rem;
+}
+.blue-morning .navbar .item:hover {
+  background-color: #141414;
+}
+.blue-morning .navbar .item .active {
+  background-color: #1a1a1a;
+}
+.blue-morning .content-body {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+}
+.blue-morning .post {
+  font-size: 1.4rem;
+  padding: 2.5rem;
+  padding-left: 0;
+}
+.blue-morning .post .title {
+  font-size: 3rem;
+  border-bottom: 0.35rem solid rgb(0, 0, 0);
+}
+.blue-morning .post .first-para::first-letter {
+  font-size: 3.3rem;
+}
+.blue-morning .sidebar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1.5rem;
+}
+.blue-morning .sidebar .title {
+  font-size: 2.5rem;
+}
+.blue-morning .post-preview {
+  padding: 0.1rem;
+  padding-top: 1.2rem;
+}
+.blue-morning .post-preview img {
+  width: 100%;
+}
+.blue-morning .post-preview .title {
+  font-size: 2rem;
+}
+.blue-morning .post-preview .info {
+  font-size: 0.9em;
+}
+.yellow-day {
+  background-color: rgb(248, 235, 163);
+  font-family: "Oswald";
+  padding: 0 3rem;
+  font-weight: 550;
+}
+
+.yellow-day .title {
+  font-size: 3.5rem;
+}
+.yellow-day .navbar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 0.5rem;
+}
+.yellow-day .navbar .item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
+.yellow-day .navbar .item:hover {
+  background-color: #141414;
+}
+.yellow-day .navbar .item .active {
+  background-color: #1a1a1a;
+}
+.yellow-day .content-body {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+}
+.yellow-day .post {
+  font-size: 1.4rem;
+  padding: 2.5rem;
+  padding-left: 0;
+}
+.yellow-day .post .title {
+  font-size: 3rem;
+  border-bottom: 0.35rem solid rgb(0, 0, 0);
+}
+.yellow-day .post .first-para::first-letter {
+  font-size: 3.3rem;
+}
+.yellow-day .sidebar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1.5rem;
+}
+.yellow-day .sidebar .title {
+  font-size: 2.5rem;
+}
+.yellow-day .post-preview {
+  padding: 0.1rem;
+  padding-top: 1.2rem;
+}
+.yellow-day .post-preview img {
+  width: 100%;
+}
+.yellow-day .post-preview .title {
+  font-size: 2rem;
+}
+.yellow-day .post-preview .info {
+  font-size: 0.9em;
+}
+.ad-astra {
+  background: linear-gradient(rgb(132, 173, 219) 5%, rgb(190, 89, 111) 100%) no-repeat fixed;
+  font-family: "Oswald";
+  padding: 4rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.ad-astra .title {
+  font-size: 6rem;
+  font-weight: 300;
+  font-family: "Six Caps";
+}
+.ad-astra .navbar {
+  background-color: rgba(196, 84, 108, 0.45);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Six Caps";
+}
+.ad-astra .navbar .main {
+  text-align: left;
+}
+.ad-astra .navbar .secondary {
+  text-align: right;
+}
+.ad-astra .navbar .item {
+  border-width: 0 0.1rem 0 0;
+  border-color: white;
+  border-style: solid;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: white;
+}
+.ad-astra .navbar .item:first-of-type {
+  border-left-width: 0.1rem;
+}
+.ad-astra .navbar .item:hover {
+  background-color: rgba(209, 122, 141, 0.45);
+}
+.ad-astra .content-body {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+}
+.ad-astra .post {
+  font-family: "Oswald";
+  font-size: 1.3em;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.ad-astra .post .title {
+  font-family: "Six Caps";
+}
+.ad-astra .sidebar {
+  background-color: rgba(196, 84, 108, 0.45);
+  padding: 1.5rem;
+  font-size: 1.3em;
+}
+.ad-astra .sidebar .title {
+  font-family: "Six Caps";
+  font-size: 4rem;
+}
+.ad-astra .post-preview img {
+  width: 100%;
+}
+.ad-astra .post-preview .title {
+  font-size: 3rem;
+}
+.ad-astra .post-preview .info {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+.lumen-night {
+  background-color: rgb(12, 12, 11);
+  background-image: url("./img-skyline,jpg");
+  color: rgb(255, 250, 229);
+  font-family: "Gloock";
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding: 4rem;
+}
+
+.lumen-night .header {
+  padding: 1rem;
+}
+.lumen-night .title {
+  font-size: 4em;
+}
+.lumen-night .navbar {
+  background-image: linear-gradient(rgb(255, 247, 210), rgb(192, 182, 143));
+  padding: 1.4rem;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.lumen-night .navbar .main {
+  text-align: left;
+}
+.lumen-night .navbar .secondary {
+  text-align: right;
+}
+.lumen-night .navbar .item {
+  padding: 1.4rem;
+  text-decoration: none;
+  color: #746a42;
+}
+.lumen-night .navbar .item:hover {
+  background-image: linear-gradient(rgb(165, 33, 33), rgb(90, 17, 17));
+  color: white;
+}
+.lumen-night .content-body {
+  display: grid;
+  grid-template-columns: 13fr 5fr;
+}
+.lumen-night .post {
+  padding: 1.5rem;
+}
+.lumen-night .post p {
+  font-family: "Playfair Display";
+  padding-left: 0.5rem;
+  font-size: 1.2em;
+}
+.lumen-night .sidebar {
+  background-image: linear-gradient(rgb(165, 33, 33), #2f0909);
+  padding: 1rem;
+  margin-right: 1rem;
+  padding-top: 0;
+}
+.lumen-night .sidebar .title {
+  background-image: linear-gradient(rgb(255, 247, 210), rgb(192, 182, 143));
+  color: #746a42;
+  padding: rem 1rem;
+  margin: 0 -1rem;
+  font-size: 2.8em;
+}
+.lumen-night .post-preview img {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.lumen-night .post-preview .title {
+  font-size: 2em;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-image: none;
+  color: rgb(255, 250, 229);
+  border-bottom: 0.1rem solid rgb(255, 250, 229);
+  margin: 0.5rem;
+}
+.lumen-night .post-preview .content {
+  margin: 0 1.5rem;
+}
+.lumen-night .post-preview .info {
+  font-size: 0.8em;
+  margin: 0 1.5rem;
+}
+.morning-garden {
+  background-color: rgb(158, 217, 235);
+  font-family: "Oswald";
+  color: white;
+}
+
+.morning-garden .title {
+  font-size: 4rem;
+}
+.morning-garden .header .title {
+  margin-top: 2rem;
+  color: black;
+  margin-left: 7.2rem;
+  margin-bottom: -1rem;
+}
+.morning-garden .navbar {
+  background-color: #0b2713;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 1rem;
+  margin: 1rem 7rem 0 7rem;
+}
+.morning-garden .navbar .main {
+  text-align: left;
+}
+.morning-garden .navbar .secondary {
+  text-align: right;
+}
+.morning-garden .navbar .item {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.morning-garden .content-body {
+  background-color: rgb(20, 71, 35);
+  margin: 0 7rem 10rem 7rem;
+  display: grid;
+  grid-template-columns: 22fr 6fr;
+}
+.morning-garden .post {
+  background-color: rgb(20, 71, 35);
+  padding: 1.5rem;
+}
+.morning-garden .post .title {
+  font-size: 3.7rem;
+}
+.morning-garden .post p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.morning-garden .sidebar {
+  padding: 1.3rem;
+  background-color: #0a2311;
+}
+.morning-garden .sidebar .title {
+  font-size: 3.5rem;
+}
+.morning-garden .post-preview img {
+  width: 100%;
+}
+.morning-garden .post-preview .title {
+  font-size: 2.3rem;
+}
+.morning-garden .post-preview .content {
+  font-size: 1.2rem;
+}
+.morning-garden .post-preview .info {
+  font-size: 0.95rem;
+}/*# sourceMappingURL=index.css.map */
